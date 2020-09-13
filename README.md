@@ -4,7 +4,11 @@ Develop from January 2020 to June 2020 in Madrid, Spain.
 
 ## About:
 
-About
+This Java user interface is design to manage an airport, allowing the user to check, add, and remove flights, routes, airports, and airlines. The interface has a modern and clean esthetic to be as easy to use for the user as possible. The interface also gives extensive feedback to the user of what is happening to avoid the user to make mistakes. To do this, the interface uses a combination of dialogs and color combinations. 
+
+In the dialogs departure, there are three main types: confirmation (to confirm the user that an action has been successfully completed), verification (to made the user verify again the action about to be executed), and error (to let the user know something is missing or wrong). Every dialog also has a custom text depending of the action the dialog is showing.
+
+In the color’s departure, most of the colors of the interface are design to give visual hints of the actions or situations currently happening in the interface. Giving the color green to all actions and buttons to confirm or accept, the color red to all actions and buttons to remove or deny and giving the color blue to all actions and buttons that gives some kind or information. The dialogs are also color match depending of their type been confirmation green, verification yellow, and error red.
 
 ## Team:
 
@@ -12,7 +16,9 @@ This project was developed by my self during the second semester of my year stud
 
 ## Development:
 
-Development
+First, I did a first design mockup of the interface using the program Pencil, designing all the main pages and parts of the interface. In these mockups I laid down the structure and layout of the interface, having a main page with four tabs, each one of them containing a part of the interface: Flights, Routes, Airports, and Airlines. Each of the tabs following the same internal layout to give continuity to the interface and make it easier to use for the user. The layout of all tabs is compose of a big table in the middle where all the information is displayed, a search bar on top where the user is able to search by field or keyword in the table below, and finally an action bar in the bottom with the two main actions buttons to add or delete information from the current table. These mockups can be seen in the mockups folder inside the project. 
+
+After having a clear idea of how the interface must be, I started coding it using Java with the JavaFx libraries, together with Scene Builder to create the interface in an easier and faster way. For the coding I used the design pattern Model View Controller to arrange the code, but with a slight modification due to a limitation of JavaFx, where the controller and the view of each page has to be in the same folder in order to work. Although the interface is not currently connected to a database in the background, I coded all the methods and controllers so if in the future I want to connect a database, the only thing I will had to do is insert the methods to connect to it in each controller. Once all the interface was coded, I started to design and implement the color skin and the style of the interface using CSS.
 
 ## Languages and tools:
 
